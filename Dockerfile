@@ -5,7 +5,7 @@ COPY package*.json .
 COPY index.html .
 COPY vite.config.js .
 COPY src /app/src
-COPY public /app/public
+#COPY public /app/public
 
 RUN npm install
 RUN npx vite build

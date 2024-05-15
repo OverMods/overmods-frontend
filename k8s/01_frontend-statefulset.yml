@@ -20,14 +20,14 @@ spec:
           name: frontend
           ports:
             - containerPort: 80
-          volumeMounts:
-            - mountPath: /var/lib/backend-data
-              name: backend-data
-  volumeClaimTemplates:
-    - metadata:
-        name: backend-data
-      spec:
-        accessModes: [ "ReadWriteMany" ]
-        resources:
-          requests:
-            storage: 128Mi
+#          volumeMounts:
+#            - mountPath: /var/lib/backend-data
+#              name: backend-data
+#  volumeClaimTemplates:
+#    - metadata:
+#        name: backend-data
+#      spec:
+#        accessModes: [ "ReadWriteMany" ]
+#        resources:
+#          requests:
+#            storage: 128Mi
