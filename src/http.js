@@ -1,7 +1,7 @@
 import axios from "axios";
 
-export const API_PATH = "http://localhost/overmods_app";
-export const UPLOAD_DIR = "uploads";
+export const API_PATH = "http://localhost/overmods";
+export const UPLOAD_DIR = "overmods-data";
 
 export const HTTP = axios.create({
    baseURL: API_PATH
