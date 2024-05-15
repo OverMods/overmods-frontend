@@ -17,6 +17,7 @@ spec:
     spec:
       containers:
         - image: mykola2312/overmods-frontend:v0.1.0
+          imagePullPolicy: Always
           name: frontend
           ports:
             - containerPort: 80
