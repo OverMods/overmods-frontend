@@ -11,7 +11,7 @@
         <img v-if="trend.mod.logo" @load="onImageLoad($event, trend.mod.id)"
              :src="trend.mod.logo" alt="" style="display: none"/>
         <img v-else @load="onImageLoad($event, trend.mod.id)"
-             src="../assets/images/materials/game%20previews/overwatch.png" alt="" style="display: none"/>
+             src="../assets/images/materials/game_previews/overwatch.png" alt="" style="display: none"/>
         <button :style="`
         --current-color: #${colors[trend.mod.id]}`"></button>
       </router-link>

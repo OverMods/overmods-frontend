@@ -612,7 +612,7 @@ a{
 			}
 
 			.picture[over]{
-				background-image: url('../images/materials/game previews/overwatch.png');
+				background-image: url('../images/materials/game_previews/overwatch.png');
 
 				+ button{
 					background-color: #cd9e98;
@@ -620,7 +620,7 @@ a{
 
 			}
 			.picture[metro]{
-				background-image: url('../images/materials/game previews/metro2033.jpg');
+				background-image: url('../images/materials/game_previews/metro2033.jpg');
 
 				+ button{
 					background-color: #595b5e;
@@ -628,7 +628,7 @@ a{
 
 			}
 			.picture[mine]{
-				background-image: url('../images/materials/game previews/minecraftleg.avif');
+				background-image: url('../images/materials/game_previews/minecraftleg.avif');
 
 				+ button{
 					background-color: #79bfe5;
