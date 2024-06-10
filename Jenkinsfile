@@ -13,12 +13,12 @@ node {
 
     stage('Push') {
         docker.withRegistry('https://registry.hub.docker.com', 'a2aa5264-dce1-4054-8828-8db95e3c6c3c') {
-            app.push('v0.1.0')
+            app.push('v0.1.1')
         }
     }
 
     stage('Rollout') {
-        sh('kubectl apply -f k8s/')
-        sh('kubectl rollout restart statefulset frontend -n overmods')
+        sh('k3s kubectl apply -f k8s/')
+        sh('k3s kubectl rollout restart statefulset frontend -n overmods')
     }
 }
